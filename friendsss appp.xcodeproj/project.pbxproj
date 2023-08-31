@@ -11,6 +11,11 @@
 		65DFDF552AA0445F00B2DAD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DFDF542AA0445F00B2DAD7 /* ContentView.swift */; };
 		65DFDF572AA0446000B2DAD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DFDF562AA0446000B2DAD7 /* Assets.xcassets */; };
 		65DFDF5A2AA0446000B2DAD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DFDF592AA0446000B2DAD7 /* Preview Assets.xcassets */; };
+		65DFDF612AA0447800B2DAD7 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DFDF602AA0447800B2DAD7 /* Friend.swift */; };
+		65DFDF632AA044AC00B2DAD7 /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DFDF622AA044AC00B2DAD7 /* FriendDetailView.swift */; };
+		65DFDF652AA044C900B2DAD7 /* NewFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DFDF642AA044C900B2DAD7 /* NewFriendView.swift */; };
+		65DFDF692AA044FB00B2DAD7 /* FriendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DFDF682AA044FB00B2DAD7 /* FriendManager.swift */; };
+		65DFDF6B2AA0451000B2DAD7 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DFDF6A2AA0451000B2DAD7 /* PersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		65DFDF542AA0445F00B2DAD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65DFDF562AA0446000B2DAD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65DFDF592AA0446000B2DAD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65DFDF602AA0447800B2DAD7 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		65DFDF622AA044AC00B2DAD7 /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
+		65DFDF642AA044C900B2DAD7 /* NewFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFriendView.swift; sourceTree = "<group>"; };
+		65DFDF682AA044FB00B2DAD7 /* FriendManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendManager.swift; sourceTree = "<group>"; };
+		65DFDF6A2AA0451000B2DAD7 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,11 @@
 		65DFDF462AA0445F00B2DAD7 = {
 			isa = PBXGroup;
 			children = (
+				65DFDF6A2AA0451000B2DAD7 /* PersistenceManager.swift */,
+				65DFDF682AA044FB00B2DAD7 /* FriendManager.swift */,
+				65DFDF642AA044C900B2DAD7 /* NewFriendView.swift */,
+				65DFDF622AA044AC00B2DAD7 /* FriendDetailView.swift */,
+				65DFDF602AA0447800B2DAD7 /* Friend.swift */,
 				65DFDF512AA0445F00B2DAD7 /* friendsss appp */,
 				65DFDF502AA0445F00B2DAD7 /* Products */,
 			);
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DFDF652AA044C900B2DAD7 /* NewFriendView.swift in Sources */,
+				65DFDF6B2AA0451000B2DAD7 /* PersistenceManager.swift in Sources */,
+				65DFDF692AA044FB00B2DAD7 /* FriendManager.swift in Sources */,
+				65DFDF612AA0447800B2DAD7 /* Friend.swift in Sources */,
 				65DFDF552AA0445F00B2DAD7 /* ContentView.swift in Sources */,
 				65DFDF532AA0445F00B2DAD7 /* friendsss_apppApp.swift in Sources */,
+				65DFDF632AA044AC00B2DAD7 /* FriendDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

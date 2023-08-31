@@ -4,23 +4,38 @@
 //
 //  Created by Mena Haitham on 31/08/2023.
 //
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+    @StateObject private var friendManager = FriendManager()
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    var body: some View {
+        NavigationView {
+            List {
+                ForEach(friendManager.friends) { friend in
+                    NavigationLink(destination: FriendDetailView(friend: $friendManager.friends[getIndex(for: friend)])) {
+                        Text(friend.name)
+                    }
+                }
+                .onDelete(perform: delete)
+                .onMove(perform: move)
+            }
+            .navigationTitle("Friends")
+            .toolbar {
+                EditButton()
+            }
+        }
+    }
+
+    private func delete(at offsets: IndexSet) {
+        friendManager.friends.remove(atOffsets: offsets)
+    }
+
+    private func move(from source: IndexSet, to destination: Int) {
+        friendManager.friends.move(fromOffsets: source, toOffset: destination)
+    }
+
+    private func getIndex(for friend: Friend) -> Int {
+        friendManager.friends.firstIndex { $0.id == friend.id } ?? 0
     }
 }
